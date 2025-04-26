@@ -1,0 +1,13 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	deleted:    database scripts/create tables.sql
+#	deleted:    database scripts/functions.sql
+#	deleted:    database scripts/insert tables.sql
+#	deleted:    database scripts/reload.sql
+#
