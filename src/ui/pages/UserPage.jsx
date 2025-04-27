@@ -31,9 +31,9 @@ const components = [
   { 'DoctorsAppointmentsPanel': { component: <DoctorsAppointmentsPanel />, title: "Назначенные приемы" } },
   { 'PatientAppointmentReferralsViewPanel': { component: <PatientAppointmentReferralsViewPanel />, title: "Мои направления на прием" } },
 ];
-
+const doctorsData = getDoctors();
 export default function UserPage() {
-  const doctorsData = getDoctors();
+  // const doctorsData = getDoctors();
   // const secret = 'fgh521fgh52fgh5fg';
   // const jwt = require('jsonwebtoken');
   console.log(doctorsData)

@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext, createContext } from 'react';
-import { BrowserRouter, Switch, Route, Router, Redirect} from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import {AuthorizationPage} from '../ui/pages/AuthorizationPage';
 
 import { useData } from './DataProvider';
@@ -9,6 +9,7 @@ const DataContext = createContext();
 
 function GlobalSpace() { 
     const { data, setData } = useData();
+    const navigate = useNavigate();
     
     // const {isLoading, setLoading} = useState();
 
@@ -16,6 +17,7 @@ function GlobalSpace() {
         <div>
             {data.isLogin === false && <AuthorizationPage/>}
             {data.isLogin === true && <UserPage/>}
+            {data.isLogin === true && navigate('/UserPage')}
         </div>
     )    
 }

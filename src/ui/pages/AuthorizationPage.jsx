@@ -10,7 +10,7 @@ import { getUsers } from "../../api/supabaseApi.js";
 
 
 // авторизация
-function AuthorizationPage() {
+export default function AuthorizationPage() {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [errorText, setErrorText] = useState(' ');
