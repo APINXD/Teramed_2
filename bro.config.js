@@ -9,8 +9,8 @@ module.exports = {
   },
   /* use https://admin.bro-js.ru/ to create config, navigations and features */
   navigations: {
-    "teramed.main": "/Authorization",
-    "teramed.main": "/UserPage"
+    "teramed.main": "/teramed/Authorization",
+    "teramed.main": "/teramed/UserPage"
   },
   features: {
     "teramed": {
