@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.css';
-import AnalysisTable from '../tables/AnalysesTable';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import { AddButton, TopPanelButton } from '../components/Buttons';
+import AnalysisTable from '../tables/AnalysesTable.jsx';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import { AddButton, TopPanelButton } from '../components/Buttons.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
-import AnalysisForm from '../forms/AnalysisForm';
+import AnalysisForm from '../forms/AnalysisForm.jsx';
 
 const AnalysisModal = ({ isOpen, onRequestClose, patient, handleAddAnalysis, doctorData }) => {
     const analysesData = useRealtimeData('get_analyses').data;

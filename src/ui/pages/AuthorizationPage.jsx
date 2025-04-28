@@ -2,10 +2,11 @@
 import { motion, useAnimate, usePresence } from "framer-motion";
 import { useState, useContext, createContext, useEffect } from 'react';
 import React from 'react';
-import { useData } from '../../dataProviders/DataProvider.jsx';
+import { useData, DataProvider } from '../../dataProviders/DataProvider.jsx';
 import { User } from '../../staticData/classes.js';
 import './styles.css';
 import { getUsers } from "../../api/supabaseApi.js";
+import { GlobalSpace } from "../../dataProviders/GlobalSpace.jsx";
 // import jwt from 'jsonwebtoken';
 
 
@@ -56,6 +57,9 @@ export default function AuthorizationPage() {
 
     return (
         <div >
+            <DataProvider>
+                <GlobalSpace/>
+            </DataProvider>  
             <motion.div
                 className='authorization_back_frame'
                 initial={{ background: "linear-gradient(45deg, #007BFF, #33D1B5)" }}

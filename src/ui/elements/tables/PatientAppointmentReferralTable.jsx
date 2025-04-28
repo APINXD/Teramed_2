@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import ConfirmAppointmentReferralModal from '../modals/ConfirmAppointmentReferralModal';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import ConfirmAppointmentReferralModal from '../modals/ConfirmAppointmentReferralModal.jsx';
 
 function PatientAppointmentReferralsTable({ patientData }) {
     const appointmentReferralsData = useRealtimeData('get_appointment_referrals').data;

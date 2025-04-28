@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ContentLabel from '../elements/components/ContentLabel'
-import { useData } from '../../dataProviders/DataProvider';
-import GospitalizationReferralTable from '../elements/tables/GospitalizationReferralTable';
+import ContentLabel from '../elements/components/ContentLabel.jsx'
+import { useData } from '../../dataProviders/DataProvider.jsx';
+import GospitalizationReferralTable from '../elements/tables/GospitalizationReferralTable.jsx';
 
 
 function GospitalizationReferralsPanel() {

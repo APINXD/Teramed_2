@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { DopInfoButton, EditButton } from "../components/Buttons";
+import { DopInfoButton, EditButton } from "../components/Buttons.jsx";
 import './styles.css';
 
 const PatientsTable = ({ patientsData, handleDiagnosPatient, handleAnalysPatient, handleAppointmentReferralPatient, handleGospitalizationsPatient, handleOpenModal, doctorData }) => {

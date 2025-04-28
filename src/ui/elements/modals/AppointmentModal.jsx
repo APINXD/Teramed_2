@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.css';
 // import AnalysisForm from './AnalysisForm';
-import PatientAppointmentForm from '../forms/PatientAppointmentForm';
+import PatientAppointmentForm from '../forms/PatientAppointmentForm.jsx';
 
 const AppointmentModal = ({ isOpen, onRequestClose, doctorId, patientId, handleAddAppointment }) => {
     return (

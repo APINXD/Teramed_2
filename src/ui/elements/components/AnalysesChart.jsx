@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine } from 'recharts';
-import { supabase } from '../../../api/supabaseClient';
-import ContentLabel from './ContentLabel';
+import { supabase } from '../../../api/supabaseClient.js';
+// import ContentLabel from './ContentLabel';
 
 const AnalysisChart = ({ analysTypeId }) => {
     const [data, setData] = useState([]);

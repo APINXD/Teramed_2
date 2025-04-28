@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import SearchPanel from '../../elements/SearchPanel';
-import ContentLabel from '../../elements/components/ContentLabel';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
+import SearchPanel from '../../elements/SearchPanel.jsx';
+import ContentLabel from '../../elements/components/ContentLabel.jsx';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
 import "../styles.css";
-import DoctorsTable from '../../elements/tables/DoctorsTable';
+import DoctorsTable from '../../elements/tables/DoctorsTable.jsx';
 
 export default function DoctorsContentPanel() {
     const doctorsData = useRealtimeData('get_doctors').data;

@@ -15,6 +15,7 @@ function App() {
         <GlobalSpace/>
       </DataProvider>  
         <Routes>
+          <Route path='/teramed/' element={AuthorizationPage}></Route>
           <Route path='/teramed/Authorization' element={AuthorizationPage}></Route>
           <Route path='/teramed/UserPage' element={UserPage}></Route>
         </Routes>

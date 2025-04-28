@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import ContentLabel from '../elements/components/ContentLabel'
-import { useData } from '../../dataProviders/DataProvider';
-import PatientAppointmentReferralsTable from '../elements/tables/PatientAppointmentReferralTable';
-import useRealtimeData from '../../dataProviders/useRealtimeData';
+import ContentLabel from '../elements/components/ContentLabel.jsx'
+import { useData } from '../../dataProviders/DataProvider.jsx';
+import PatientAppointmentReferralsTable from '../elements/tables/PatientAppointmentReferralTable.jsx';
+import useRealtimeData from '../../dataProviders/useRealtimeData.js';
 
 function PatientAppointmentReferralsViewPanel() {
   const { data, setData } = useData();

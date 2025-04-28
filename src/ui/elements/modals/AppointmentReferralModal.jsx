@@ -3,8 +3,8 @@ import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.css';
 // import AnalysisForm from './AnalysisForm';
-import PatientAppointmentForm from '../forms/PatientAppointmentForm';
-import AppointmentReferralForm from '../forms/AppointmentReferralForm';
+// import PatientAppointmentForm from '../forms/PatientAppointmentForm';
+import AppointmentReferralForm from '../forms/AppointmentReferralForm.jsx';
 
 const AppointmentReferralModal = ({ isOpen, onRequestClose, doctorData, patient, handleAddAppointmentReferral }) => {
     return (

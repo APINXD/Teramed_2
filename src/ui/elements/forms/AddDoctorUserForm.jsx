@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from 'react-hook-form';
 import { useDropzone } from 'react-dropzone';
-import { addUserAndDoctor, uploadPhoto } from "../../../api/supabaseApi";
-import useRealtimeData from "../../../dataProviders/useRealtimeData";
+import { addUserAndDoctor, uploadPhoto } from "../../../api/supabaseApi.js";
+import useRealtimeData from "../../../dataProviders/useRealtimeData.js";
 import './styles.css';
 
 

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import ContentLabel from '../elements/components/ContentLabel'
-import { useData } from '../../dataProviders/DataProvider';
-import DiagnosesTable from '../elements/tables/DiagnosesTable';
-import AnalysisTable from '../elements/tables/AnalysesTable';
-import useRealtimeData from '../../dataProviders/useRealtimeData';
-import AnalysisChart from '../elements/components/AnalysesChart';
+import ContentLabel from '../elements/components/ContentLabel.jsx'
+import { useData } from '../../dataProviders/DataProvider.jsx';
+import DiagnosesTable from '../elements/tables/DiagnosesTable.jsx';
+import AnalysisTable from '../elements/tables/AnalysesTable.jsx';
+import useRealtimeData from '../../dataProviders/useRealtimeData.js';
+import AnalysisChart from '../elements/components/AnalysesChart.jsx';
 import './styles.css';
 
 

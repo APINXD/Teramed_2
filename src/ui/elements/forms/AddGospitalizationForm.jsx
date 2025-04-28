@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { supabase } from '../../../api/supabaseClient';
+import { supabase } from '../../../api/supabaseClient.js';
 
 
 const AddGospitalizationForm = ({ onRequestClose, patientId, terapevtId }) => {

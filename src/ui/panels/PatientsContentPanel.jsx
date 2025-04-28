@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import SearchPanel from '../elements/SearchPanel';
-import ContentLabel from '../elements/components/ContentLabel';
+import SearchPanel from '../elements/SearchPanel.jsx';
+import ContentLabel from '../elements/components/ContentLabel.jsx';
 import "./styles.css";
-import { useData } from '../../dataProviders/DataProvider';
-import AddGospitalizationForm from '../elements/forms/AddGospitalizationForm';
-import PatientsTable from '../elements/tables/PatientsTable';
-import useRealtimeData from '../../dataProviders/useRealtimeData';
-import PatientDetailsModal from '../elements/modals/PatientDetailsModal';
-import DiagnosisModal from '../elements/modals/DiagnosisModal';
-import AnalysisModal from '../elements/modals/AnalysisModal';
-import GospitalizationsModal from '../elements/modals/GospitalizationsModal';
-import AppointmentReferralModal from '../elements/modals/AppointmentReferralModal';
+import { useData } from '../../dataProviders/DataProvider.jsx';
+// import AddGospitalizationForm from '../elements/forms/AddGospitalizationForm';
+import PatientsTable from '../elements/tables/PatientsTable.jsx';
+import useRealtimeData from '../../dataProviders/useRealtimeData.js';
+import PatientDetailsModal from '../elements/modals/PatientDetailsModal.jsx';
+import DiagnosisModal from '../elements/modals/DiagnosisModal.jsx';
+import AnalysisModal from '../elements/modals/AnalysisModal.jsx';
+import GospitalizationsModal from '../elements/modals/GospitalizationsModal.jsx';
+import AppointmentReferralModal from '../elements/modals/AppointmentReferralModal.jsx';
 
 
 export default function PatientsContentPanel() {

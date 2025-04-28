@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.css';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import AddGospitalizationForm from '../forms/AddGospitalizationForm';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import AddGospitalizationForm from '../forms/AddGospitalizationForm.jsx';
 
 const GospitalizationsModal = ({ isOpen, onRequestClose, patient, doctorData, handleAddGospitalizations }) => {
     const gospitalizationsData = useRealtimeData('get_gospitalizations').data;

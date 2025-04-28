@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { EditButton, DeleteButton, AddButton, CloseButton, TopPanelButton } from '../../elements/components/Buttons';
-import SearchPanel from '../../elements/SearchPanel';
-import ContentLabel from '../../elements/components/ContentLabel';
-import UserTable from '../../elements/tables/UsersTable';
-import ModalPanel from '../../elements/components/ModalPanel';
-import AddDoctorUserForm from '../../elements/forms/AddDoctorUserForm';
-import AddPatientUserForm from '../../elements/forms/AddPatientUserForm';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
+import { EditButton, DeleteButton, AddButton, CloseButton, TopPanelButton } from '../../elements/components/Buttons.jsx';
+import SearchPanel from '../../elements/SearchPanel.jsx';
+import ContentLabel from '../../elements/components/ContentLabel.jsx';
+import UserTable from '../../elements/tables/UsersTable.jsx';
+import ModalPanel from '../../elements/components/ModalPanel.jsx';
+import AddDoctorUserForm from '../../elements/forms/AddDoctorUserForm.jsx';
+import AddPatientUserForm from '../../elements/forms/AddPatientUserForm.jsx';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
 
 function UsersContentPanel() {
   const usersData = useRealtimeData('get_users').data;

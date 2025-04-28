@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from 'react-hook-form';
-import { addUserAndPatient } from "../../../api/supabaseApi";
-import useRealtimeData from "../../../dataProviders/useRealtimeData";
+import { addUserAndPatient } from "../../../api/supabaseApi.js";
+import useRealtimeData from "../../../dataProviders/useRealtimeData.js";
 import './styles.css'; // Импорт стилей формы
 
 const AddPatientUserForm = ({ onClose }) => {

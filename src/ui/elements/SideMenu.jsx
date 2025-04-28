@@ -1,8 +1,8 @@
 import { Children, useState } from 'react';
-import { useData } from '../../dataProviders/DataProvider';
+import { useData } from '../../dataProviders/DataProvider.jsx';
 import './styles.css';
-import UserAccountPanel from '../panels/UserAccountPanel';
-import { LogOutButton } from './components/Buttons';
+import UserAccountPanel from '../panels/UserAccountPanel.jsx';
+import { LogOutButton } from './components/Buttons.jsx';
 
 function SideMenu({ children }) {
     const { data, setData } = useData();    

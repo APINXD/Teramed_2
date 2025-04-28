@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useData } from '../../../dataProviders/DataProvider';
-import ContentLabel from '../../elements/components/ContentLabel'
+import { useData } from '../../../dataProviders/DataProvider.jsx';
+import ContentLabel from '../../elements/components/ContentLabel.jsx'
 import '../styles.css';
-import PatientAppointmentsTable from '../../elements/tables/PatientAppointmentsTable';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import { AddButton } from '../../elements/components/Buttons';
-import AppointmentModal from '../../elements/modals/AppointmentModal';
+import PatientAppointmentsTable from '../../elements/tables/PatientAppointmentsTable.jsx';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import { AddButton } from '../../elements/components/Buttons.jsx';
+import AppointmentModal from '../../elements/modals/AppointmentModal.jsx';
 
 function PatientAppointmentViewPanel() {
   const { data, setData } = useData();

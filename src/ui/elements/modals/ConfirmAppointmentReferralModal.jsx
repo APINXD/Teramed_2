@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import './styles.css';
-import ConfirmAppointmentReferralForm from '../forms/ConfirmAppointmentReferralForm';
+import ConfirmAppointmentReferralForm from '../forms/ConfirmAppointmentReferralForm.jsx';
 
 const ConfirmAppointmentReferralModal = ({ isOpen, onClose, ldmId, patientId, appointmentId, handleAddAppointment }) => {
 

@@ -1,9 +1,10 @@
-import { useState, useEffect, useContext, createContext } from 'react';
+import { createContext } from 'react';
+import React from 'react';
 import { redirect, useNavigate } from 'react-router-dom';
-import {AuthorizationPage} from '../ui/pages/AuthorizationPage';
+import {AuthorizationPage} from '../ui/pages/AuthorizationPage.jsx';
 
-import { useData } from './DataProvider';
-import UserPage from '../ui/pages/UserPage';
+import { useData } from './DataProvider.jsx';
+import UserPage from '../ui/pages/UserPage.jsx';
 
 const DataContext = createContext();
 

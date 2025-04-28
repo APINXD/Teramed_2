@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import { EditButton } from "../components/Buttons";
-import DataDisplay from "../../../dataProviders/DataDisplay";
+// import { EditButton } from "../components/Buttons";
+import DataDisplay from "../../../dataProviders/DataDisplay.js";
 import './styles.css';
 
 const UsersTable = ({ usersData, handleEditUser }) => {

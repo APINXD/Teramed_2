@@ -41,7 +41,8 @@
         "build:prod": "npm run clean && brojs build",
         "test": "react-scripts test",
         "clean": "rimraf dist",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "start-local": "react-scripts start"
     },
     "eslintConfig": {
         "extends": [

@@ -1,8 +1,8 @@
 import React from 'react'
-import { useData } from '../../dataProviders/DataProvider';
-import ContentLabel from '../elements/components/ContentLabel';
-import useRealtimeData from '../../dataProviders/useRealtimeData';
-import GospitalizationReferralTable from '../elements/tables/GospitalizationReferralTable';
+import { useData } from '../../dataProviders/DataProvider.jsx';
+import ContentLabel from '../elements/components/ContentLabel.jsx';
+import useRealtimeData from '../../dataProviders/useRealtimeData.js';
+import GospitalizationReferralTable from '../elements/tables/GospitalizationReferralTable.jsx';
 
 function PatientGospitalizationReferrals() {
     const { data, setData } = useData();

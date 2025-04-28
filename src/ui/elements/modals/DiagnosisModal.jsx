@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.css';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import DiagnosesTable from '../tables/DiagnosesTable';
-import { AddButton } from '../components/Buttons';
-import DiagnosisForm from '../forms/DiagnosisForm';
-import { getSickHistories } from '../../../api/supabaseApi';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import DiagnosesTable from '../tables/DiagnosesTable.jsx';
+import { AddButton } from '../components/Buttons.jsx';
+import DiagnosisForm from '../forms/DiagnosisForm.jsx';
+// import { getSickHistories } from '../../../api/supabaseApi';
 
 const DiagnosisModal = ({ isOpen, onRequestClose, patient, handleAddDiagnosis, doctorData }) => {
     const diagnosesData = useRealtimeData('get_sick_histories').data;

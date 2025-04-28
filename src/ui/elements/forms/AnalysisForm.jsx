@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 import Modal from 'react-modal';
 import './styles.css';
-import { AddButton } from '../components/Buttons';
-import { supabase } from '../../../api/supabaseClient';
-import { fetchData } from '../../../api/api';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import { addAnalysis } from '../../../api/supabaseApi';
+// import { AddButton } from '../components/Buttons';
+// import { supabase } from '../../../api/supabaseClient';
+// import { fetchData } from '../../../api/api';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import { addAnalysis } from '../../../api/supabaseApi.js';
 
 const AnalysisForm = ({ isOpen, onRequestClose, doctorId, patientId, handleAddAnalysis }) => {
     const [analysDate, setAnalysDate] = useState('');

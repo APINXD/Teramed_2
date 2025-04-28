@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { useData } from '../../dataProviders/DataProvider';
-import { AddButton, CloseButton, TopPanelButton, TopPanelDopButton } from '../elements/components/Buttons';
+import { useData } from '../../dataProviders/DataProvider.jsx';
+// import { AddButton, CloseButton, TopPanelButton, TopPanelDopButton } from '../elements/components/Buttons';
 import './styles.css';
 
 

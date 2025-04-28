@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import { CloseButton } from '../components/Buttons';
+// import { CloseButton } from '../components/Buttons';
 import './styles.css';
 
 const PatientDetailsModal = ({ isOpen, onRequestClose, patient }) => {

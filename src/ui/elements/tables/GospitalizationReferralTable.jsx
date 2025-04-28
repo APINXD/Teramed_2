@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
-import useRealtimeData from '../../../dataProviders/useRealtimeData';
-import { useData } from '../../../dataProviders/DataProvider';
+import useRealtimeData from '../../../dataProviders/useRealtimeData.js';
+import { useData } from '../../../dataProviders/DataProvider.jsx';
 import { fetchData } from '../../../api/api';
-import AssignHospitalBedModal from '../modals/AssignHospitalBedModal';
+import AssignHospitalBedModal from '../modals/AssignHospitalBedModal.jsx';
 
 const GospitalizationReferralTable = ({ patientId = null }) => {
     const { data, setData } = useData();
